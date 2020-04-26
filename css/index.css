@@ -1,0 +1,157 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1em;
+}
+img{
+    border-style: none;
+}
+a {
+    color: lightskyblue;
+    text-decoration: none;
+}
+input{
+    text-indent: 0px;
+    text-shadow: none;
+    text-align: start;
+    cursor: text;
+    float: left;
+}
+button{
+    color: buttontext;
+    text-align: center;
+    align-items: flex-start;
+    padding: 1px 6px;
+    border-style: outset;
+}
+.topbar{
+    display: block;
+    min-width: 320px;
+    height: 70px;
+    width: 100%;
+    will-change: transform;
+    /*Por cima dos outros element*/
+    z-index: 999;
+}
+.topbar-fixed{
+    background-color: #181818;
+    position: fixed;
+    top: 0;
+    left:0;
+}
+.topbar-container{
+    width: 1247px;
+    background: #181818;
+    height: 70px;
+    /*Primeiro valor é pra cima e pra baixo
+    Segundo valor é automatico ele vai centralizar*/
+    margin: 0 auto;
+    display: flex;
+}
+.topbar-cell{
+    display: block;
+    /*Float quebra texto ao redor de imagens */
+    float: left;
+    /*altura herdada do elemento pai */
+    height: inherit;
+    margin: 0;
+    width: auto;
+    
+}
+.topbar-cell-logo{
+    padding: 0 22px;
+}
+.topbar-cell-logo::before{
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+.topbar-cell-logo a{
+    font-size: 0;
+    line-height: normal;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+.topbar-cell-logo img{
+    height: 23px;
+    vertical-align: middle;
+    width: 82px;
+}
+
+.topbar-cell-search{
+    padding-top: 5px;
+    width: 58%;
+}
+.topbar-search-form{
+    /*Se nao colocar float:left
+    ele vai ficar com uma margin imaginaria
+    Da certo tambem colocar position: absolute*/
+    float: left;
+    width: 100%;
+    max-width: 520px;
+}
+.form-control{
+    background: #fff;
+    border-radius: 3px;
+    display: block;
+    font-family: "Roboto",sans-serif;
+    font-weight: 400;
+    line-height: normal;
+    margin: 10px 0;
+    width: 100%;
+    font-size: 18px;
+    height: 54px;
+    padding: 0 17px;
+    transition: border-color .2s, box-shadow .2s;
+    transform: scale(1);
+}
+.topbar-search-form input{
+    border: none;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    height: 40px;
+    line-height: 40px;
+    width: calc(100% - 45px);
+
+}
+.form-medium{
+    font-size: 14px;
+    height: 44px;
+    padding: 0 14px;
+}
+.submit{
+    background: darkturquoise;
+    border: none;
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: 40px;
+    width: 45px;
+    margin: 10px 0;
+    transition: opacity .2s;
+}
+button img{
+    height: 20px;
+    width: 20px;
+    vertical-align: middle;   
+}
+.topbar-cell-search::after {
+    /*Se relaciona com o float
+    meio que inibe */
+    clear: both;
+    content: "";
+    display: block;
+}
+.topbar-cell-toolbar{
+    float: right;
+    width: 30%;
+}
