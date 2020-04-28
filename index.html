@@ -8,58 +8,174 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
     <body>
         <header>
-            <div class="topbar topbar-fixed">
-                <div class="topbar-container">
-                    <div class="topbar-cell topbar-cell-logo">
-                        <a href="https://www.g2a.com">
-                            <img src="imgs/logo_g2a_white.svg" alt="PC Games, Software, Gift Cards and more - Shop Online at G2A.COM">
-                        </a>
-                    </div>
-                    <div class="topbar-cell topbar-cell-search">
-                        <form class="topbar-search-form" action="/search">
-                            <input type="search" name="query" placeholder="Search ..." autocomplete="off" class="form-control form-medium">
-                            <button class="submit" type="submit">
-                              <img src="imgs/search-white-18dp.svg">
-                            </button>
-                        </form>
-                    </div>
-                    <div class="topbar-cell topbar-cell-toolbar">
-                        <ul class="topbar-custom-items type-tools">
-                            <li class="item item-wishlist">
-                                <a href="https://www.g2a.com/wishlist" class="wishlist-hearth">
-                                    <img src="imgs/favorite-white-18dp.svg" class="svg-icon">
-                                </a>
-                            </li>
-                            <li class="item item-cart">
-                                <a href="https://www.g2a.com/cart" class="cart-button">
-                                    <img src="imgs/shopping_cart-white-18dp.svg" class="svg-icon">
-                                </a>
-                            </li>
-                        </ul>
-                        <button data-toggle = 'true' class="topbar-btn mymarketplace">
-                            <div class="user-profile-widget">
-                                <div class="user-profile-widget-picture">
-                                    <img src="imgs/person-white-18dp.svg" class="icon">
+            <div style="margin-top: 70px;">
+                <div class="topbar topbar-fixed">
+                    <div class="topbar-container">
+                        <div class="topbar-cell topbar-cell-logo">
+                            <a href="https://www.g2a.com">
+                                <img src="imgs/logo_g2a_white.svg" alt="PC Games, Software, Gift Cards and more - Shop Online at G2A.COM">
+                            </a>
+                        </div>
+                        <div class="topbar-cell topbar-cell-search">
+                            <form class="topbar-search-form" action="/search">
+                                <input type="search" name="query" placeholder="Search ..." autocomplete="off" class="form-control form-medium">
+                                <button class="submit" type="submit">
+                                  <img src="imgs/search-white-18dp.svg">
+                                </button>
+                            </form>
+                        </div>
+                        <div class="topbar-cell topbar-cell-toolbar">
+                            <ul class="topbar-custom-items type-tools">
+                                <li class="item item-wishlist">
+                                    <a href="https://www.g2a.com/wishlist" class="wishlist-hearth">
+                                        <img src="imgs/favorite-white-18dp.svg" class="svg-icon">
+                                    </a>
+                                </li>
+                                <li class="item item-cart">
+                                    <a href="https://www.g2a.com/cart" class="cart-button">
+                                        <img src="imgs/shopping_cart-white-18dp.svg" class="svg-icon">
+                                    </a>
+                                </li>
+                            </ul>
+                            <!--Aqui-->
+                            <button class="topbar-btn mymarketplace">
+                                <div class="user-profile-widget">
+                                    <div class="user-profile-widget-picture">
+                                        <img src="imgs/person-white-18dp.svg" class="icon">
+                                    </div>
+                                    <div class = "user-profile-widget-content">Log in</div>
                                 </div>
-                                <div class = "user-profile-widget-content">Log in</div>
+                            </button>
+                            <button class="topbar-btn start-selling">
+                                <img src="imgs/dinheiro.svg" class="icon icon-money">
+                                Sell now
+                            </button>
+                        </div>
+                    </div>
+                    <div class="topbar-widgets">
+                        <div class="topbar-widget">
+                            <div class="popover">
+                                <!-- coloca escutador aqui-->
+                                <div class="popover-content">
+                                    <span class="triangle"></span>
+                                    <div class="popover-content-wrap">
+                                        <div class="panel-login">
+                                            <div class="content">
+                                                <a class="btn btn-block facebook" href="https://www.facebook.com/">
+                                                    <img src = "imgs/facebook.svg" class="icon icon-facebook">
+                                                    Log in with Facebook
+                                                </a>
+                                                <a class="btn btn-block googleplus" href="https://www.google.com/">
+                                                    <img src="imgs/google-hangouts.svg" class="icon icon-googleplus">
+                                                    Log in with Google
+                                                </a>
+                                                <a href="https://id.g2a.com/login?client_id=g2a_com&redirect_uri=https%3A%2F%2Fwww.g2a.com" class="btn btn-block" style="background: #008ecc;">Login in / Register</a>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="panel-mymarketplace-items">
+                                            <ul>
+                                                <li>
+                                                    <a href="https://www.g2a.com/redeem-card" class="option">Use G2A Gift Card</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="topbar-widget-footer">
+                                        <a href="https://www.g2a.com/supporthub" target="_blank">Need help?</a>
+                                    </div>
+                                </div>
                             </div>
-                        </button>
-                        <button class="topbar-btn start-selling">
-                            <img src="imgs/dinheiro.svg" class="icon icon-money">
-                            Sell now
-                        </button>
+                        </div>
+                        <div class="topbar-widget topbar-widget-start-selling">
+                            <div class="popover">
+                                <div class="popover2-content">
+                                    <span class="triangle" style="margin-left: -7.5px;"></span>
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <a href="https://www.g2a.com/marketplace/customer/addproduct/" class="option" target="_blank">
+                                                    <span class="option-icon">
+                                                        <img src="imgs/files-and-folders.svg" class = "icon" style="height: 24px; width: 24px;">
+                                                    </span>
+                                                    <span class="option-strong">Add single item</span>
+                                                    <span class="option-sublabel"> Turn your stuff into cash</span>
+                                                </a>
+                                            </li>
+                                            <li style="border-bottom: 0;">
+                                                <a href="https://www.g2a.com/integration-api" class="option" target="_blank">
+                                                    <span class="option-icon">
+                                                        <img src="imgs/plug.svg" class="icon" style="height: 24px; width: 24px;">
+                                                    </span>
+                                                    <span class="option-strong">Integrate API</span>
+                                                    <span class="option-sublabel">Extend your store with new items</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="topbar-widgets">
-                    
+                <div class="menu-navbar">
+                    <nav class="cat-navbar">
+                        <ul class="cat-list">
+                            <li class="cat-item">
+                                <a class="cat-item-link" href="https://www.g2a.com/category/gaming-c1">
+                                    <span>Gaming</span>
+                                </a>
+                                <div class="cat-popover-wrapper">
+
+                                </div>
+                            </li>
+                            <li class="cat-item">
+                                <a class="cat-item-link" href="https://www.g2a.com/category/merchandise-c1313">
+                                    <span>Merchandise</span>
+                                </a>
+                                <div class="cat-popover-wrapper">
+
+                                </div>
+                            </li>
+                            <li class="cat-item">
+                                <a class="cat-item-link" href="https://www.g2a.com/category/electronics-c1278">
+                                    <span>Electronics</span>
+                                </a>
+                                <div class="cat-popover-wrapper">
+
+                                </div>
+                            </li>
+                            <li class="cat-item">
+                                <a class="cat-item-link" href="https://www.g2a.com/category/gift-cards-c6">
+                                    <span>Gift cards</span>
+                                </a>
+                                <div class="cat-popover-wrapper">
+
+                                </div>
+                            </li>
+                            <li class="cat-item">
+                                <a class="cat-item-link" href="https://www.g2a.com/category/subscriptions-c938">
+                                    <span>Subscriptions</span>
+                                </a>
+                                <div class="cat-popover-wrapper">
+
+                                </div>
+                            </li>
+                            <li class="cat-item">
+                                <a class="cat-item-link-last" href="https://www.g2a.com/category/all">
+                                    <span>More</span>
+                                </a>
+                                <div class="cat-popover-wrapper">
+
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
             
-
-            
-
         </header>
-
+        <script src="js/hoverTopbar.js"></script>
     </body>
     
 
