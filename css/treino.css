@@ -1,58 +1,27 @@
-*{
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+.container{
+    display: flex;
+    height: 500px;
+    width: 50%;
+    border: 1px solid #000000;
+    margin: 30px auto;
+    /*flex-wrap: wrap;*/
+    /*align-item: flex-end Alinha no final do cross axis, flex start é o contrario*/
+    /*center tambem é no cross axis*/
+    /*align-content: ajeita o espaçamento das linhas dos items*/
+   /* align-content: space-around;*/
 }
-body {
-    font-family: "Roboto", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1m;
+.square{
+    height: 150px;
+    width: 150px;
+    background: yellow;
 }
-img{
-    border-style: none;
+.square2{
+     height: 150px;
+     width: 150px;
+     background: yellow;
 }
-a {
-    color: lightskyblue;
-    text-decoration: none;
-}
-.topbar{
-    display: block;
-    min-width: 320px;
-    height: 70px;
-    width: 100%;
-    will-change: transform;
-    /*Por cima dos outros element*/
-    z-index: 999;
-}
-.topbar-fixed{
-    background-color: #181818;
-    position: fixed;
-    top: 0;
-    left:0;
-}
-.topbar-container{
-    width: 1247px;
-    background: #181818;
-    height: 70px;
-    /*Primeiro valor é pra cima e pra baixo
-    Segundo valor é automatico ele vai centralizar*/
-    margin: 0 auto;
-    
-}
-.topbar-container-box1{
-    position: absolute;
-    display: inline-block;
-    height: inherit;
-    width: 20%;
-    background: aliceblue;
-    margin-right: 10px;
-}
-.topbar-container-box2{
-    position: absolute;
-    display: inline-block;
-    height: inherit;
-    width: 20%;
-    background: rgb(89, 199, 153);
-    margin-right: 10px;
+.square-menor{
+    height: 50px;
+    width: 50px;
+    background: yellow;
 }
