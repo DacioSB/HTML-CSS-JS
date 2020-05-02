@@ -1,0 +1,32 @@
+.container{
+    display: flex;
+    height: 500px;
+    width: 50%;
+    border: 1px solid #000000;
+    margin: 30px auto;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+
+    /*flex-wrap: wrap;*/
+    /*align-item: flex-end Alinha no final do cross axis, flex start é o contrario*/
+    /*center tambem é no cross axis*/
+    /*align-content: ajeita o espaçamento das linhas dos items*/
+   /* align-content: space-around;*/
+}
+.square{
+    height: 150px;
+    width: 150px;
+    background: yellow;
+}
+.square2{
+     height: 150px;
+     width: 150px;
+     background: yellow;
+}
+.square-menor{
+    height: 50px;
+    width: 50px;
+    background: yellow;
+    
+}
