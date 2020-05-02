@@ -4,6 +4,10 @@
     width: 50%;
     border: 1px solid #000000;
     margin: 30px auto;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+
     /*flex-wrap: wrap;*/
     /*align-item: flex-end Alinha no final do cross axis, flex start é o contrario*/
     /*center tambem é no cross axis*/
@@ -24,4 +28,5 @@
     height: 50px;
     width: 50px;
     background: yellow;
+    
 }
